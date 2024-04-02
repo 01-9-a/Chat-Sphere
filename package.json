@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "6.3",
+    "openai": "^4.32.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "project-yielding-wolverine",
+  "version": "1.0.0",
+  "main": "cpen322-tester.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

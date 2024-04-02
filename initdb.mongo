@@ -1,0 +1,30 @@
+conn = new Mongo();
+db = conn.getDB("cpen322-messenger");
+db.dropDatabase();
+imgHost = '/';
+
+result = db.chatrooms.insert([
+	{
+		_id: 'room-1',
+		name: 'Everyone in CPEN322',
+	    image: imgHost+'assets/everyone-icon.png'
+	},
+	{
+		_id: 'room-2',
+		name: 'Foodies only',
+	    image: imgHost+'assets/bibimbap.jpg'
+	},
+	{
+		_id: 'room-3',
+		name: 'Gamers unite',
+	    image: imgHost+'assets/minecraft.jpg'
+	},
+	{
+		_id: 'room-4',
+		name: 'Canucks Fans',
+	    image: imgHost+'assets/canucks.png'
+	}
+]);
+
+print(result);
+

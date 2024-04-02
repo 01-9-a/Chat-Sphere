@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <style>
+        body { 
+    font-family: Arial, sans-serif; 
+}
+form { 
+    max-width: 300px; 
+    margin: 100px auto 20px; /* Increase the top margin to 100px */
+    padding: 20px; /* Optional: Add some padding inside the form */
+}
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+}
+input[type=text], input[type=password], input[type=submit] { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; /* Make sure padding and border are included in the total width and height */
+}
+
+input[type=submit] { 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; /* You can adjust if needed, just included for consistency */
+    cursor: pointer; 
+}
+
+input[type=submit]:hover { 
+    background-color: #45a049; 
+}
+    </style>
+</head>
+<body>
+    <form method="POST" action="/login">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        
+        <input type="submit" value="Log In">
+    </form>
+</body>
+</html>
